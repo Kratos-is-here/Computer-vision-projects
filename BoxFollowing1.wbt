@@ -1,0 +1,130 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.7007584807165425 0.6824986630530883 0.20768516228799364 5.463834279117015
+  position -0.858406 1.4 1.32454
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+E-puck {
+  translation -0.812318 -6.39682e-05 0.802889
+  rotation 0 1 0 1.5708
+  controller "PS2_controller"
+  camera_fieldOfView 1
+  camera_width 512
+  camera_height 512
+}
+Solid {
+  children [
+    SolidPipe {
+      translation -0.694975 0 0.143966
+      height 0.01
+      radius 0.18
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/asphalt.jpg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+      }
+    }
+    SolidPipe {
+      translation 0.16805 0 -0.283482
+      name "pipe(1)"
+      height 0.01
+      radius 0.18
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/asphalt.jpg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+      }
+    }
+    SolidPipe {
+      translation -0.288872 -1.33227e-15 -0.336586
+      name "pipe(3)"
+      height 0.01
+      radius 0.18
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/asphalt.jpg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+      }
+    }
+    SolidBox {
+      translation 0.174811 0.05 -0.291231
+      name "box(2)"
+      size 0.1 0.1 0.1
+      appearance PBRAppearance {
+        baseColor 0.6 0 0.6
+        roughness 0.5
+        metalness 0
+      }
+    }
+    SolidPipe {
+      translation 0.556135 -8.88178e-16 0.0495814
+      name "pipe(2)"
+      height 0.01
+      radius 0.18
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/asphalt.jpg"
+          ]
+        }
+        roughness 0.5
+        metalness 0
+      }
+    }
+    SolidBox {
+      translation 0.556842 0.05 0.0307337
+      rotation 0 -1 0 -5.307179586466759e-06
+      size 0.1 0.1 0.1
+      appearance PBRAppearance {
+        baseColor 1 0 0
+        roughness 0.5
+        metalness 0
+      }
+    }
+    SolidBox {
+      translation -0.283888 0.05 -0.345905
+      name "box(4)"
+      size 0.1 0.1 0.1
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 0.5
+        metalness 0
+      }
+    }
+    SolidBox {
+      translation -0.694482 0.05 0.13465
+      name "box(1)"
+      size 0.1 0.1 0.1
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 0.5
+        metalness 0
+      }
+    }
+  ]
+  locked TRUE
+}
